@@ -119,11 +119,7 @@ if (argc>1) // Check if input arguments exist
 			cout << "\nALL rules passed\n";
 			return 0;
 		}
-		else
-		{
-			cout << "\nALL rules failed\n";
-			return 0;
-		}
+		
 	}
 }
 cout << "\nNo input arguments\n";
