@@ -104,26 +104,28 @@ private:
 
 int main(int argc, char* argv[])
 {
-if (argc>1) // Check if input arguments exist
-{
+	if (argc > 1) // Check if input arguments exist
 	{
+
 		int input[100];
 		rule Myrule;
 		for (int i = 1; i < argc; i++)
-			{
-				input[i - 1] = atol(argv[i]);
-			}
-		
+		{
+			input[i - 1] = atol(argv[i]);
+		}
+
 		if (Myrule.RunTests(&input[0], argc - 1) == 1)
 		{
 			cout << "\nALL rules passed\n";
 			return 0;
 		}
-		
 	}
-}
-cout << "\nNo input arguments\n";
-return 0;
+	else
+	{
+		cout << "\nNo input arguments\n";
+		return 0;
+	}
+	return 0;
 }
 
 
