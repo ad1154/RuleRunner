@@ -30,16 +30,30 @@ public:
 			cout << "\nRule RuleA has passed\n";
 			ruleCheck++;
 		}
+                else
+                {
+                    cout << "\nRule RuleA has failed\n";
+                }
 		if (RuleB() == 1)
 		{
 			cout << "Rule RuleB has passed\n";
 			ruleCheck++;
 		}
+                else
+                {
+                    cout << "\nRule RuleB has failed\n";
+                }
+                
 		if (RuleC() == 1)
 		{
 			cout << "Rule RuleC has passed\n";
 			ruleCheck++;
 		}
+                else
+                {
+                    cout << "\nRule RuleC has failed\n";
+                }
+                
 		if (ruleCheck == NumberOfRules)
 		{
 			return 1;
