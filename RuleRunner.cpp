@@ -30,30 +30,30 @@ public:
 			cout << "\nRule RuleA has passed\n";
 			ruleCheck++;
 		}
-                else
-                {
-                    cout << "\nRule RuleA has failed\n";
-                }
+		else
+		{
+			cout << "\nRule RuleA has failed\n";
+		}
 		if (RuleB() == 1)
 		{
 			cout << "Rule RuleB has passed\n";
 			ruleCheck++;
 		}
-                else
-                {
-                    cout << "\nRule RuleB has failed\n";
-                }
-                
+		else
+		{
+			cout << "\nRule RuleB has failed\n";
+		}
+
 		if (RuleC() == 1)
 		{
 			cout << "Rule RuleC has passed\n";
 			ruleCheck++;
 		}
-                else
-                {
-                    cout << "\nRule RuleC has failed\n";
-                }
-                
+		else
+		{
+			cout << "\nRule RuleC has failed\n";
+		}
+
 		if (ruleCheck == NumberOfRules)
 		{
 			return 1;
@@ -104,14 +104,27 @@ private:
 
 int main(int argc, char* argv[])
 {
-	int input[100];
-	rule Myrule;
-	for (int i = 1; i < argc; i++){
-		{
-			input[i - 1] = atol(argv[i]);
+if (argc>1)
+{
+	{
+		int input[100];
+		rule Myrule;
+		for (int i = 1; i < argc; i++){
+			{
+				input[i - 1] = atol(argv[i]);
+			}
 		}
+		if (Myrule.RunTests(&input[0], argc - 1) == 1)
+			cout << "ALL rules passed\n";
+		return 0;
 	}
-	if (Myrule.RunTests(&input[0], argc-1) == 1)
-		cout << "ALL rules passed\n";
-	return 0;
 }
+return 0;
+}
+
+
+
+
+
+
+
