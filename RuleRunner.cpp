@@ -36,7 +36,7 @@ public:
 		}
 		if (RuleB() == 1)
 		{
-			cout << "Rule RuleB has passed\n";
+			cout << "\nRule RuleB has passed\n";
 			ruleCheck++;
 		}
 		else
@@ -46,7 +46,7 @@ public:
 
 		if (RuleC() == 1)
 		{
-			cout << "Rule RuleC has passed\n";
+			cout << "\nRule RuleC has passed\n";
 			ruleCheck++;
 		}
 		else
@@ -104,19 +104,26 @@ private:
 
 int main(int argc, char* argv[])
 {
-if (argc>1)
+if (argc>1) // Check if input arguments exist
 {
 	{
 		int input[100];
 		rule Myrule;
-		for (int i = 1; i < argc; i++){
+		for (int i = 1; i < argc; i++)
 			{
 				input[i - 1] = atol(argv[i]);
 			}
-		}
+		
 		if (Myrule.RunTests(&input[0], argc - 1) == 1)
-			cout << "ALL rules passed\n";
-		return 0;
+		{
+			cout << "\nALL rules passed\n";
+			return 0;
+		}
+		else
+		{
+			cout << "\nALL rules failed\n";
+			return 0;
+		}
 	}
 }
 cout << "\nNo input arguments\n";
