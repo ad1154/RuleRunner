@@ -5,7 +5,7 @@
 */
 
 /*
-* File:   rr.cpp
+* File:   RuleRunner.cpp
 * Author: Aditya Daryanani
 *
 * Created on December 14, 2015, 12:17 PM
@@ -66,7 +66,7 @@ private:
 	{
 		for (int i = 1; i < arrayIndex; i++)
 		{
-			if ((integerArray[i - 1] + integerArray[i]) > 1000)
+			if ((integerArray[i - 1] + integerArray[i]) >= 1000)
 			{
 				return 1;
 			}
@@ -119,6 +119,7 @@ if (argc>1)
 		return 0;
 	}
 }
+cout << "\nNo input arguments\n";
 return 0;
 }
 
