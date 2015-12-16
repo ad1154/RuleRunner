@@ -130,15 +130,9 @@ int main(int argc, char* argv[])
 		return 0;
 	}
 	return 0;
-<<<<<<< HEAD:main.cpp
-}
-=======
 }
 
 
 
 
 
-
-
->>>>>>> origin/master:RuleRunner.cpp
