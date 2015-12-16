@@ -6,7 +6,7 @@
 
 /*
 * File:   RuleRunner.cpp
-* Author: Aditya Daryanani
+* Author: Adi
 *
 * Created on December 14, 2015, 12:17 PM
 */
